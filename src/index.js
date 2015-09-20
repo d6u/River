@@ -1,5 +1,5 @@
 import createAction from './createAction';
-import { createStore } from './createStream';
+import { createStore } from './createStore';
 import subscribe from './subscribe';
 
 export default {
