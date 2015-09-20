@@ -2,7 +2,7 @@
   "name": "river-react",
   "version": "0.0.1",
   "description": "Reactive stream composer for React application",
-  "main": "src/index.js",
+  "main": "./lib/index.js",
   "scripts": {
     "clean": "rimraf lib",
     "lint": "eslint src",
