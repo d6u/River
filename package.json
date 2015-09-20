@@ -1,0 +1,50 @@
+{
+  "name": "river-react",
+  "version": "0.0.1",
+  "description": "Reactive stream composer for React application",
+  "main": "src/index.js",
+  "scripts": {
+    "clean": "rimraf lib",
+    "lint": "eslint src",
+    "check": "npm run lint",
+    "build:lib": "babel src --out-dir lib",
+    "build": "npm run build:lib",
+    "preversion": "npm run clean && npm run check",
+    "version": "npm run build",
+    "postversion": "git push && git push --tags",
+    "prepublish": "npm run clean && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/d6u/River.git"
+  },
+  "keywords": [
+    "river",
+    "react",
+    "rx",
+    "flux",
+    "stream",
+    "observable",
+    "reactive"
+  ],
+  "author": "Daiwei Lu <daiweilu123@gmail.com> (http://daiwei.lu)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/d6u/River/issues"
+  },
+  "homepage": "https://github.com/d6u/River",
+  "devDependencies": {
+    "babel": "^5.8.23",
+    "babel-core": "^5.8.25",
+    "babel-eslint": "^4.1.3",
+    "babel-loader": "^5.3.2",
+    "eslint": "^1.5.0",
+    "eslint-config-airbnb": "0.0.8",
+    "eslint-plugin-react": "^3.4.2",
+    "react": "^0.14.0-rc1",
+    "react-dom": "^0.14.0-rc1",
+    "rimraf": "^2.4.3",
+    "rx": "^3.1.2",
+    "webpack": "^1.12.2"
+  }
+}
