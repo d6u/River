@@ -1,6 +1,6 @@
 {
   "name": "river-react",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Reactive stream composer for React application",
   "main": "./lib/index.js",
   "scripts": {
