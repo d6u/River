@@ -123,3 +123,7 @@ ReactDOM.render(<AppContainer />, node);
 ```
 
 Internally, `subscribe` uses [`combineLatestObj`](https://github.com/staltz/combineLatestObj) method to shallow convert `observableMap` into a new observabe. E.g. for `{counter: counterStream}`, when `counterStream` emits `123`, the new observable will emit `{counter: 123}`. `{counter: 123}` will eventually be passed as `props` to `App` component.
+
+## Examples
+
+- Chat example [https://github.com/d6u/river-chat](https://github.com/d6u/river-chat)
